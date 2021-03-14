@@ -1,5 +1,7 @@
 # MicronautBroker
 
+[![Build Status](https://travis-ci.com/massiccio/MicronautBroker.svg?branch=main)](https://travis-ci.com/massiccio/MicronautBroker)
+
 Simple RESTful API for managing BTC trading requests using the [Micronaut](https://micronaut.io/) framework. There is no authentication in this application, while the API only managers request to create accounts and buy assets (BTC).
 
 A simple Flask service producing BTC/USD prices is included
