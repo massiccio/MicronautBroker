@@ -30,3 +30,13 @@ In other words, account 1 must have a balance of at least $18,000 in order for t
 1. The [PriceCheckerTask](https://github.com/massiccio/MicronautBroker/blob/main/src/main/java/org/broker/PriceCheckerTask.java) background task is used to poll the provided price service every 2 seconds (localhost/port 5000).
 A simple implementation of the circuit breaker pattern is used in case the price service is not available.
 2. Pending orders (the order book) are stored in a (max) heap. Every time a new price is available, all orders whose limit price is larger or equal than the price are executed (if the account balance is sufficient)
+
+## Testing the code
+```bash
+./gradlew build
+```
+
+## Running the service
+```bash
+./gradlew run
+```
